@@ -1,0 +1,65 @@
+@media (width < 910px) {
+    .hero-blob{
+        right: -15%;
+        top: 10%;
+        width: 600px;
+        height: 600px;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .navbar .navlinks{
+        position: absolute;
+        top: 55px;
+        background: var(--white);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        transition: 0.2s linear;
+        animation: x 0.2s linear;
+        height: 0px;
+        border-radius: 0px 0px 15px 15px;
+        border-bottom: 2px solid #6a98f0;
+        overflow: hidden;
+    }
+    .navbar .nav-data .navlinks .nav-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .navlinks.active{
+        transition: 0.2s linear;
+        height: 250px;
+        animation: x 0.2s linear;
+        display: inline-flex;
+    }
+    @keyframes x {
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 250px;
+        }
+    }
+    .navbar .logo{
+        padding: 15px;
+    }
+    
+    #menu-btn{
+        display: block;
+        padding-right: 15px;
+    }
+    .abt-text .abt-txt{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .navbar .navlinks .nav-links li{
+        width: 100vw;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
