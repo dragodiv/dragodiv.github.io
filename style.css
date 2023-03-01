@@ -653,6 +653,7 @@ body{
     margin-bottom: 7px;
     border-radius: 5px;
     outline: none;
+    border: 2px solid #6d83f2;
 }
 .con input[type="submit"]{
     width: 100%;
