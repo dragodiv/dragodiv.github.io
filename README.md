@@ -1,3 +1,3 @@
 # My Complete Portfolio
-https://www.divanshu.tech/
+https://www.divanshusoni.in
 <p> made using pure html, css and js </p>
