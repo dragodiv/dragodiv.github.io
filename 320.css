@@ -1,4 +1,4 @@
-@media (0px < width < 320px) {
+@media (width < 320px) {
     .hero-section .text {
         line-height: 65px;
     }
