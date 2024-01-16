@@ -4,7 +4,7 @@
 <head>
     <link rel="canonical" href="https://www.divanshusoni.in">
     <script>
-        window.addEventListener("load", () => {
+        window.addEventListener("DOMContentLoaded", () => {
             if (window.matchMedia("(prefers-color-scheme : dark)").matches) {
                 let toggle = document.getElementById("theme-toggle"),
                     themebtn = document.getElementById("theme-btn"),
@@ -17,6 +17,9 @@
                 themebtn.classList.remove("fa-moon");
                 themeData.innerText = "Light";
             }
+        })
+        window.addEventListener("load", () => {
+            document.getElementById("loader").classList.remove("loading")
         })
     </script>
     <meta charset="UTF-8">
@@ -67,12 +70,11 @@
     <link rel="icon" type="image/png" href="assets/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="assets/android-chrome-512x512.png" sizes="512x512">
 
-    <title>Divanshu Soni - FrontEnd Web Developer, Graphic Designer and Social Media Marketer</title>
-
 </head>
 
 <body>
     <div class="theme" id="theme-toggle">
+        <div id="loader" class="loading"><i class="fas fa-spinner fa-pulse"></i></div>
         <div class="main">
             <!-- NAVBAR START -->
             <nav class="navbar">
@@ -102,7 +104,7 @@
                         <h1 class="name">DIVANSHU SONI</h1>
                         <p class="creation">FrontEnd Web Developer | Graphic Designer | Marketer</p>
                         <div class="buttons">
-                            <a href="assets/Divanshu Soni cv.pdf" download><button id="d-resume">Download
+                            <a href="/assets/divanshu-soni-resume.pdf" download><button id="d-resume">Download
                                     Resume</button></a>
                             <span class="social">
                                 <a target="_blank" href="https://github.com/dragodiv" title="github"><i
@@ -164,14 +166,16 @@
                 <section class="about" id="about">
                     <span class="abt-title">About Me</span>
                     <div class="aboutme">
-                        <div class="avatar"><img loading="lazy" src="assets/avatar.webp"
-                                alt="divanshu soni Divanshu Soni Frontend web developer divanshusoni.in"></div>
+                        <div class="avatar" onclick="window.open('assets/avatar.webp','_blank')">
+                            <img loading="lazy" src="assets/avatar.webp"
+                                alt="divanshu soni Divanshu Soni Frontend web developer divanshusoni.in">
+                        </div>
                         <div class="abt-text">
                             <!-- <span class="abt-name">Divanshu Soni</span>
                     <span class="abt-dob">19 | New Delhi</span> -->
                             <span class="abt-txt">Hey! I'm Divanshu Soni skilled in Web Development, Graphic Designing,
                                 Social Media Marketing, SEO and many other Programming Languages.
-                                I'm in my BCA 2nd year pursuing it from VIPS, GGSIPU. Passionate to work with new
+                                Currently in BCA 2nd year pursuing from VIPS, GGSIPU. Passionate to work with new
                                 individuals or teams and enhancing my skills according to daily trends &
                                 technology.</span>
                             <span class="links">

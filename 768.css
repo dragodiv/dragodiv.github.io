@@ -1,4 +1,4 @@
-@media (width < 768px) {
+@media (width <= 768px) {
     ::-webkit-scrollbar {
         width: 5px;
     }
@@ -123,6 +123,7 @@
     }
 
     .divCards .cards {
+        display: grid;
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }

@@ -1,4 +1,4 @@
-@media (width < 910px) {
+@media (width <= 910px) {
     .hero-blob {
         right: -15%;
         top: 10%;
@@ -8,6 +8,7 @@
 
     .navbar {
         padding: 0px;
+        height: 60px;
     }
 
     .navbar .navlinks {
@@ -24,7 +25,7 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        display: none;
+        display: block;
         -webkit-transition: 0.2s linear;
         -o-transition: 0.2s linear;
         transition: 0.2s linear;
@@ -39,7 +40,7 @@
     .navbar .nav-data .navlinks .nav-links {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        display: none;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -53,15 +54,19 @@
     }
 
     .navbar .navlinks.active {
-        -webkit-transition: 0.2s linear;
-        -o-transition: 0.2s linear;
-        transition: 0.2s linear;
+        -webkit-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
+        transition: 0.3s linear;
         height: 250px;
-        -webkit-animation: x 0.2s linear;
-        animation: x 0.2s linear;
+        -webkit-animation: x 0.3s linear;
+        animation: x 0.3s linear;
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
+    }
+
+    .navbar .nav-data .navlinks.active .nav-links{
+        display: flex;
     }
 
     @-webkit-keyframes x {

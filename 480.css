@@ -1,4 +1,4 @@
-@media (width < 480px) {
+@media (width <=480px) {
     .hero-section .text {
         line-height: 55px;
     }
@@ -95,6 +95,10 @@
     .abt-text .abt-txt {
         font-size: 20px;
         line-height: 25px;
+    }
+
+    .skill-txt {
+        text-align: center;
     }
 
     .skills .langs i {

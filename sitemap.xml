@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://www.divanshusoni.in/</loc>
-<lastmod>2023-11-29T18:17:15+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://www.divanshusoni.in/assets/Divanshu%20Soni%20cv.pdf</loc>
-<lastmod>2023-11-29T18:17:15+00:00</lastmod>
-<priority>0.90</priority>
-</url>
-<url>
-<loc>https://www.divanshusoni.in/DivPlays-Music-Player-Glassmorph/</loc>
-<lastmod>2023-12-26T18:17:15+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.divanshusoni.in/card-ui-glassmorph/</loc>
-<lastmod>2023-12-26T18:17:15+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.divanshusoni.in/Image-Resize-and-Compressor/</loc>
-<lastmod>2023-12-26T18:17:15+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://www.divanshusoni.in/calculator-glassmorph/</loc>
-<lastmod>2023-12-26T18:17:15+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+    <url>
+        <loc>https://www.divanshusoni.in/</loc>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://www.divanshusoni.in/assets/divanshu-soni-resume.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.divanshusoni.in/DivPlays-Music-Player-Glassmorph/</loc>
+    </url>
+    <url>
+        <loc>https://www.divanshusoni.in/card-ui-glassmorph/</loc>
+    </url>
+    <url>
+        <loc>https://www.divanshusoni.in/Image-Resize-and-Compressor/</loc>
+    </url>
+    <url>
+        <loc>https://www.divanshusoni.in/calculator-glassmorph/</loc>
+    </url>
 </urlset>
