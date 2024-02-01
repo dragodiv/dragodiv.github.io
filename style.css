@@ -10,6 +10,7 @@
     -webkit-transition: 0.2s linear;
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
+    -webkit-tap-highlight-color: transparent;
     /* border: 1px solid red; */
 }
 
