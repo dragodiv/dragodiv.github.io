@@ -35,7 +35,7 @@ let year = document.getElementById("year");
 year.innerText = new Date().getFullYear();
 let EnvData;
 
-async function fetchSecureToken() {
+async function fetchEnv() {
   const url = "https://divanshu-soni-env.dragodiv.workers.dev/";
   const options = {
     method: "GET",
@@ -64,9 +64,7 @@ async function fetchSecureToken() {
     console.error("Error fetching from worker:", error);
   }
 }
-
-// Call the fetch function
-fetchSecureToken();
+fetchEnv();
 
 // console.log(window.matchMedia("(prefers-color-scheme : dark)").matches);
 // email sending function
