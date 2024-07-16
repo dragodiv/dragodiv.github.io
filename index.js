@@ -34,6 +34,23 @@ function CopyLink(n) {
 let year = document.getElementById("year");
 year.innerText = new Date().getFullYear();
 
+// email sending function
+function SendEmail(data) {
+  Email.send({
+    SecureToken: data.SecureToken,
+    To: data.ToEmail,
+    From: data.FromEmail,
+    FromName: document.getElementById("name").value,
+    ReplyAddress: document.getElementById("email").value,
+    Subject:
+      document.getElementById("name").value + " contacted you from portfolio",
+    Body:
+      document.getElementById("email").value +
+      "<br>" +
+      document.getElementById("message").value,
+  }).then((message) => alert(message));
+}
+
 // Function to fetch env creds
 async function fetchEnv() {
   const url = "https://divanshu-soni-env.dragodiv.workers.dev/";
@@ -66,19 +83,3 @@ async function fetchEnv() {
 }
 
 // console.log(window.matchMedia("(prefers-color-scheme : dark)").matches);
-// email sending function
-function SendEmail(data) {
-  Email.send({
-    SecureToken: data.SecureToken,
-    To: data.ToEmail,
-    From: data.FromEmail,
-    FromName: document.getElementById("name").value,
-    ReplyAddress: document.getElementById("email").value,
-    Subject:
-      document.getElementById("name").value + " contacted you from portfolio",
-    Body:
-      document.getElementById("email").value +
-      "<br>" +
-      document.getElementById("message").value,
-  }).then((message) => alert(message));
-}
