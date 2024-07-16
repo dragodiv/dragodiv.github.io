@@ -33,7 +33,6 @@ function CopyLink(n) {
 
 let year = document.getElementById("year");
 year.innerText = new Date().getFullYear();
-let EnvData;
 
 async function fetchEnv() {
   const url = "https://divanshu-soni-env.dragodiv.workers.dev/";
@@ -50,7 +49,7 @@ async function fetchEnv() {
     const response = await fetch(url, options);
     if (response.ok) {
       const data = await response.json();
-      EnvData = data;
+      SendEmail(data);
     } else if (response.status === 403) {
       console.error("Access forbidden: Invalid origin.");
     } else {
@@ -64,15 +63,14 @@ async function fetchEnv() {
     console.error("Error fetching from worker:", error);
   }
 }
-fetchEnv();
 
 // console.log(window.matchMedia("(prefers-color-scheme : dark)").matches);
 // email sending function
-function SendEmail() {
+function SendEmail(data) {
   Email.send({
-    SecureToken: EnvData.SecureToken,
-    To: EnvData.ToEmail,
-    From: EnvData.FromEmail,
+    SecureToken: data.SecureToken,
+    To: data.ToEmail,
+    From: data.FromEmail,
     FromName: document.getElementById("name").value,
     ReplyAddress: document.getElementById("email").value,
     Subject:
