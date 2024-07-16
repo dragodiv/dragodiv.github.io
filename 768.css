@@ -1,0 +1,197 @@
+@media (width <= 768px) {
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+
+    .hero-section .text {
+        line-height: 65px;
+    }
+
+    .text .hey {
+        font-size: 45px;
+    }
+
+    .text .name {
+        font-size: 80px;
+    }
+
+    .text .creation {
+        font-size: 25px;
+    }
+
+    .buttons #d-resume {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .buttons .social a {
+        font-size: 33px;
+    }
+
+    .hero-blob {
+        right: -35%;
+        top: -8%;
+        width: 500px;
+        height: 500px;
+    }
+
+    .skills .langs i {
+        font-size: 100px;
+    }
+
+    .about .aboutme {
+        gap: 20px;
+        padding: 20px 25px;
+    }
+
+    .about img {
+        width: 190px;
+    }
+
+    .about .avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutme .abt-text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .abt-text .abt-dob,
+    .abt-text .links a {
+        font-size: 25px;
+        margin: 0px 8px;
+    }
+
+    .abt-text .abt-txt {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .skills .langs i {
+        font-size: 95px;
+    }
+
+    .proj {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .projects .proj .project {
+        line-height: 70px;
+    }
+
+    .navbar {
+        padding: 20px 25px;
+    }
+
+    .navbar .logo img {
+        width: 140px;
+    }
+
+    .navbar {
+        padding: 30px 20px;
+    }
+
+    #menu {
+        font-size: 10px;
+    }
+
+    .navbar .navlinks .nav-links.active {
+        -webkit-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+        top: 28.1px;
+        height: 250px;
+        -webkit-animation: x 0.2s linear;
+        animation: x 0.2s linear;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+    }
+
+    .divCards .cards {
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .buttons .social {
+        width: 200px;
+    }
+
+    .buttons .social a {
+        font-size: 35px;
+    }
+
+    @-webkit-keyframes x {
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 250px;
+        }
+    }
+
+    @keyframes x {
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 250px;
+        }
+    }
+
+    .navbar .navlinks .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .about .aboutme {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer-links .flexs {
+        height: 100%;
+        font-size: 18px;
+    }
+
+    .abt-text .abt-txt {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .contact {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+
+
+}

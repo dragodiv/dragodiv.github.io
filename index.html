@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://www.divanshusoni.in">
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            if (window.matchMedia("(prefers-color-scheme : dark)").matches) {
+                let toggle = document.getElementById("theme-toggle"),
+                    themebtn = document.getElementById("theme-btn"),
+                    themeData = document.getElementById("theme-data");
+                toggle.classList.add("dark");
+                themebtn.classList.add("fa-moon");
+                themeData.innerText = "Dark";
+            } else {
+                toggle.classList.remove("dark");
+                themebtn.classList.remove("fa-moon");
+                themeData.innerText = "Light";
+            }
+        })
+        window.addEventListener("load", () => {
+            document.getElementById("loader").classList.remove("loading")
+            document.getElementById("loader").style.display = "none";
+        })
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6d83f2">
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Primary Meta Tags -->
+    <title>Divanshu Soni - React Developer and Web Designer</title>
+    <meta name="title" content="Divanshu Soni - React Developer and Web Designer">
+    <meta name="description"
+        content="Hi, I'm Divanshu Soni - skilled in Web Development, Graphic Designing, Social Media Marketing, and SEO. Let's create something amazing together!">
+    <meta name="keywords"
+        content="Divanshu Soni, Divanshu Soni Developer, Divanshu Soni VIPS, dragodiv, Divanshu, Divanshu Soni Graphic Designer">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.divanshusoni.in">
+    <meta property="og:title" content="Divanshu Soni - React Developer and Web Designer">
+    <meta property="og:description"
+        content="Hi, I'm Divanshu Soni - skilled in Web Development, Graphic Designing, Social Media Marketing, and SEO. Let's create something amazing together!">
+    <meta property="og:image" content="/assets/portfolio-seo-banner.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.divanshusoni.in">
+    <meta property="twitter:title" content="Divanshu Soni - React Developer and Web Designer">
+    <meta property="twitter:description"
+        content="Hi, I'm Divanshu Soni - skilled in Web Development, Graphic Designing, Social Media Marketing, and SEO. Let's create something amazing together!">
+    <meta property="twitter:image" content="/assets/portfolio-seo-banner.webp">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="768.css">
+    <link rel="stylesheet" href="480.css">
+    <link rel="stylesheet" href="320.css">
+    <link rel="stylesheet" href="910.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" type="image/png" href="assets/apple-touch-icon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/android-chrome-512x512.png" sizes="512x512">
+
+</head>
+
+<body>
+    <div class="theme" id="theme-toggle">
+        <div id="loader" class="loading"><i class="fas fa-spinner fa-pulse"></i></div>
+        <div class="main">
+            <!-- NAVBAR START -->
+            <nav class="navbar">
+                <div class="nav-data">
+                    <a href=""><span class="logo"><img loading="lazy" src="assets/Color-logo.webp"
+                                alt="Color-logo"></span></a>
+                    <span class="navlinks" id="nav-links">
+                        <ul class="nav-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About me</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li id="theme"><i class="fa-solid fa-sun" id="theme-btn"></i>
+                                <span id="theme-data">Light</span>
+                            </li>
+                        </ul>
+                    </span>
+                    <span id="menu-btn"><i class="fa-solid fa-bars" id="menu"></i></span>
+                </div>
+            </nav>
+            <!-- NAVBAR ENDS -->
+
+            <div class="container">
+                <!-- 1ST SECTION START  -->
+                <section class="hero-section section" id="hero">
+                    <div class="text">
+                        <p class="hey">Hello I'm</p>
+                        <h1 class="name">DIVANSHU SONI</h1>
+                        <p class="creation">React Developer | Graphic Designer | Marketer</p>
+                        <div class="buttons">
+                            <a target="_blank" href="/assets/divanshu-soni-software-developer-resume.pdf">
+                                <button id="d-resume">Download Resume</button>
+                            </a>
+                            <span class="social">
+                                <a target="_blank" href="https://github.com/dragodiv" title="github"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/divanshu-soni" title="linkedin"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/divanshusoni.in" title="facebook"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/itsdivansh.u" title="instagram"><i
+                                        class="fa-brands fa-square-instagram"></i></a>
+                            </span>
+                        </div>
+                        <svg class="hero-blob" xmlns="http://www.w3.org/2000/svg" width="562.5" height="577.333"
+                            viewBox="250 211.333 562.5 577.333">
+                            <defs>
+                                <linearGradient id="b" gradientTransform="rotate(90 .5 .5)">
+                                    <stop offset="0%" stop-color="#6d83f2" />
+                                    <stop offset="100%" stop-color="#6a98f0" />
+                                </linearGradient>
+                                <clipPath id="a">
+                                    <path fill="currentColor"
+                                        d="M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z" />
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#a)">
+                                <path fill="url(#b)" d="M625 716.5Q250 933 250 500t375-216.5q375 216.5 0 433Z" />
+                            </g>
+                        </svg>
+                    </div>
+
+                </section>
+                <!-- 1ST SECTION ENDS  -->
+                <!-- 2ND SECTION START  -->
+                <section class="divCards section">
+                    <div class="card-title">Things I Love</div>
+                    <div class="cards">
+                        <div class="card">
+                            <span class="icon"><i class="fa-solid fa-code"></i></span>
+                            <span class="title">Website Development</span>
+                            <span class="desc">I'm a React Developer with advance knowledge of CSS and JS, It is
+                                more fun to play with new trends in Website Development & Designs.</span>
+                        </div>
+                        <div class="card">
+                            <span class="icon"><i class="fa-solid fa-pen-nib  js"></i></i></span>
+                            <span class="title">Designing</span>
+                            <span class="desc">Graphic Design and Social Media Post are additional skills that I'm
+                                passionate about, designing trending social media posts.</span>
+                        </div>
+                        <div class="card">
+                            <span class="icon"><i class="fa-solid fa-hashtag"></i></i></span>
+                            <span class="title">Social Media & Marketing</span>
+                            <span class="desc">I'm Experienced Social Media Marketer with advance SEO and Social Media
+                                account handling skills, Grow your Digital presence.</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- 2ND SECTION ENDS  -->
+                <!-- 3RD SECTION START  -->
+                <section class="about" id="about">
+                    <span class="abt-title">About Me</span>
+                    <div class="aboutme">
+                        <div class="avatar" onclick="window.open('assets/avatar.webp','_blank')">
+                            <img loading="lazy" src="assets/avatar.webp"
+                                alt="divanshu soni Divanshu Soni react web developer divanshusoni.in">
+                        </div>
+                        <div class="abt-text">
+                            <!-- <span class="abt-name">Divanshu Soni</span>
+                    <span class="abt-dob">19 | New Delhi</span> -->
+                            <span class="abt-txt">Hey, I am Divanshu Soni, a React Developer with
+                                expertise in web development, graphic design, social media marketing, SEO, and various
+                                programming languages. I am currently a second-year BCA student at VIPS, GGSIPU,
+                                dedicated to collaborating with diverse teams and individuals to continually improve my
+                                skills in alignment with current industry trends and technology advancements.</span>
+                            <span class="links">
+                                <a target="_blank" href="https://github.com/dragodiv" title="github"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/divanshu-soni" title="linkedin"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/divanshusoni.in" title="facebook"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.instagram.com/itsdivansh.u" title="instagram"><i
+                                        class="fa-brands fa-square-instagram"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skills">
+                        <span class="skill-txt">Development Skills</span>
+                        <div class="langs">
+                            <i title="HTML" class="fa-brands fa-html5"></i>
+                            <i title="javascript" class="fa-brands fa-square-js"></i>
+                            <i title="CSS" class="fa-brands fa-css3-alt"></i>
+                            <i title="Python" class="fa-brands fa-python"></i>
+                            <i title="MySQL" class="fa-solid fa-database"></i>
+                            <i title="PHP" class="fa-brands fa-php"></i>
+                            <i title="React" class="fa-brands fa-react"></i>
+                            <i title="Github" class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </section>
+                <!-- 3RD SECTION ENDS  -->
+                <!-- 4TH SECTION START  -->
+
+                <section class="projects" id="projects">
+                    <span class="project-txt">Projects</span>
+                    <div class="proj">
+                        <div class="project">
+                            <img loading="lazy" class="banner"
+                                src="https://raw.githubusercontent.com/dragodiv/DivPlays-Music-Player-Glassmorph/main/images/DivPlays%20Banner.jpg"
+                                alt="divanshu soni Divanshu Soni react web developer divanshusoni.in" />
+                            <span class="p-title">DivPlays</span>
+                            <span class="p-about">A Music Player made on the reference of modern GlassMorph Designs, you
+                                can listen the listed song.</span>
+                            <span class="p-btns">
+                                <button><a target="_blank"
+                                        href="https://github.com/dragodiv/DivPlays-Music-Player-Glassmorph"
+                                        class="p-git"><i class="fa-brands fa-github"></i></a></button>
+                                <button><a target="_blank"
+                                        href="https://dragodiv.github.io/DivPlays-Music-Player-Glassmorph/"
+                                        class="p-btn">Live Preview <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                                <button class="p-btn" onclick="CopyLink(1)"><i class="fa-solid fa-link"></i>
+                                    Copy</button>
+                            </span>
+                        </div>
+                        <div class="project">
+                            <img loading="lazy" class="banner"
+                                src="https://raw.githubusercontent.com/dragodiv/card-ui-glassmorph/main/card-ui2.png"
+                                alt="divanshu soni Divanshu Soni react web developer divanshusoni.in" />
+                            <span class="p-title">Card UI Design</span>
+                            <span class="p-about">An Awesome GlassMorph Card UI Design, showing the modern and trendy
+                                look.</span>
+                            <span class="p-btns">
+                                <button><a target="_blank" href="https://github.com/dragodiv/card-ui-glassmorph"
+                                        class="p-git"><i class="fa-brands fa-github"></i></a></button>
+                                <button><a target="_blank" href="https://dragodiv.github.io/card-ui-glassmorph/"
+                                        class="p-btn">Live Preview <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                                <button class="p-btn" onclick="CopyLink(2)"><i class="fa-solid fa-link"></i>
+                                    Copy</button>
+                            </span>
+                        </div>
+                        <div class="project">
+                            <img loading="lazy" class="banner"
+                                src="https://github.com/dragodiv/Image-Resize-and-Compressor/blob/main/assets/Image%20Resize%20&%20Compressor.png?raw=true"
+                                alt="divanshu soni Divanshu Soni react web developer divanshusoni.in" />
+                            <span class="p-title">Image Compressor</span>
+                            <span class="p-about">You can Compress an resize your images for free, this tool made via
+                                javascript.</span>
+                            <span class="p-btns">
+                                <button><a target="_blank"
+                                        href="https://github.com/dragodiv/Image-Resize-and-Compressor" class="p-git"><i
+                                            class="fa-brands fa-github"></i></a></button>
+                                <button><a target="_blank"
+                                        href="https://dragodiv.github.io/Image-Resize-and-Compressor/"
+                                        class="p-btn">Live Preview <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                                <button class="p-btn" onclick="CopyLink(3)"><i class="fa-solid fa-link"></i>
+                                    Copy</button>
+                            </span>
+                        </div>
+                        <div class="project">
+                            <img loading="lazy" class="banner"
+                                src="https://raw.githubusercontent.com/dragodiv/calculator-glassmorph/main/Calculator-Glassmorph.png"
+                                alt="divanshu soni Divanshu Soni react web developer divanshusoni.in" />
+                            <span class="p-title">Calculator</span>
+                            <span class="p-about">Modern & Attractive Calculator with working functions, have some
+                                trendy animations.</span>
+                            <span class="p-btns">
+                                <button><a target="_blank" href="https://github.com/dragodiv/calculator-glassmorph"
+                                        class="p-git"><i class="fa-brands fa-github"></i></a></button>
+                                <button><a target="_blank" href="https://dragodiv.github.io/calculator-glassmorph"
+                                        class="p-btn">Live Preview <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                                <button class="p-btn" onclick="CopyLink(4)"><i class="fa-solid fa-link"></i>
+                                    Copy</button>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <!-- 4TH SECTION ENDS  -->
+                <!-- 5TH SECTION START  -->
+                <section class="contact">
+                    <div class="con">
+                        <span class="c-title">Contact Me!</span>
+                        <form id="contact" onsubmit="SendEmail(); reset(); return false">
+                            <div class="inputs">
+                                <input type="text" placeholder="Name" id="name">
+                                <input type="email" placeholder="Email Id" id="email">
+                                <textarea name="message" id="message" cols="30" rows="3"
+                                    placeholder="Write message here..."></textarea>
+                            </div>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                    <div class="footer-links">
+                        <span class="f-title">Useful Links</span>
+                        <span class="flexs">
+                            <span class="f2">
+                                <a target="_blank" href="https://www.instagram.com/itsdivansh.u">Instagram</a>
+                                <a target="_blank" href="https://www.facebook.com/divanshusoni.in">Facebook</a>
+                                <a target="_blank" href="https://wa.me/message/SVZFHOP7BUNXI1">WhatsApp</a>
+                                <a target="_blank" href="https://www.linkedin.com/in/divanshu-soni">Linkedin</a>
+                                <a target="_blank" href="mailto:contact@divanshusoni.in">Email</a>
+                            </span>
+                            <span class="f1">
+                                <!-- <a href="#" target="_blank">Open Source</a> -->
+                                <a href="https://www.linkedin.com/in/divanshu-soni/recent-activity/all/"
+                                    target="_blank">Acheivements</a>
+                                <!-- <a href="#" target="_blank">Data Policy</a> -->
+                                <a href="https://github.com/dragodiv?tab=repositories" target="_blank">Projects</a>
+                                <a href="sitemap.xml" target="_blank">Sitemap</a>
+                            </span>
+                        </span>
+                    </div>
+                </section>
+                <!-- 5TH SECTION ENDS  -->
+                <!-- 6TH SECTION START  -->
+                <section class="credits">
+                    <span class="credit"><i class="fa-sharp fa-regular fa-copyright"></i> <span id="year"></span> All
+                        Rights Reserved | <a target="_blank" href="https://www.linkedin.com/in/divanshu-soni/">Divanshu Soni</a></span>
+                </section>
+                <!-- 6TH SECTION ENDS  -->
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

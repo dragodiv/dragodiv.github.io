@@ -1,0 +1,102 @@
+@media (width <= 320px) {
+    .hero-section .text {
+        line-height: 65px;
+    }
+
+    .text .hey {
+        font-size: 45px;
+    }
+
+    .text .name {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .text .creation {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .skills .langs i {
+        font-size: 50px;
+    }
+
+    .buttons #d-resume {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .buttons .social a {
+        font-size: 30px;
+    }
+
+    .hero-blob {
+        right: -100%;
+        top: 4%;
+        width: 500px;
+        height: 500px;
+    }
+
+    .about .aboutme {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 20px 25px;
+        text-align: center;
+    }
+
+    .about img {
+        width: 170px;
+    }
+
+    .about .avatar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .aboutme .abt-text {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .abt-text .abt-dob,
+    .abt-text .links a {
+        font-size: 25px;
+    }
+
+    .abt-text .abt-txt {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .skills .langs i {
+        font-size: 80px;
+    }
+
+    .proj {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .projects .proj .project {
+        line-height: 50px;
+    }
+
+    .navbar {
+        padding: 20px 25px;
+    }
+
+    .navbar .logo img {
+        width: 100px;
+    }
+
+    .credits {
+        height: 30px;
+
+    }
+
+}

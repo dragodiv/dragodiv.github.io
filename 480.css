@@ -1,0 +1,136 @@
+@media (width <=480px) {
+    .hero-section .text {
+        line-height: 55px;
+    }
+
+    .text .hey {
+        font-size: 40px;
+    }
+
+    .text .name {
+        font-size: 55px;
+    }
+
+    .text .creation {
+        font-size: 18px;
+    }
+
+    .buttons #d-resume {
+        width: 220px;
+        font-size: 16px;
+    }
+
+    .buttons .social {
+        width: 180px;
+    }
+
+    .buttons .social a {
+        font-size: 30px;
+    }
+
+    .footer-links .flexs {
+        height: 100%;
+        font-size: 18px;
+    }
+
+    .hero-blob {
+        left: 45%;
+        top: 15%;
+        /* transform: rotate(183434deg); */
+        width: 200px;
+        height: 200px;
+    }
+
+    .divCards .cards {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .about .aboutme {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 20px 25px;
+        text-align: center;
+    }
+
+    .abt-text .abt-txt {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .skills .langs i {
+        font-size: 80px;
+    }
+
+    .about img {
+        width: 170px;
+    }
+
+    .about .avatar {
+        width: 180px;
+        height: 180px;
+    }
+
+    .aboutme .abt-text {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .abt-text .abt-dob,
+    .abt-text .links a {
+        font-size: 25px;
+    }
+
+    .abt-text .abt-txt {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .skill-txt {
+        text-align: center;
+    }
+
+    .skills .langs i {
+        font-size: 80px;
+    }
+
+    .proj {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .projects .proj .project {
+        line-height: 70px;
+    }
+
+    .navbar {
+        padding: 20px 25px;
+    }
+
+    .navbar .logo img {
+        width: 120px;
+    }
+
+    .buttons #d-resume {
+        height: 45px;
+    }
+
+    .navbar .navlinks .nav-links li {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+
+
+}
