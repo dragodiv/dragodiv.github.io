@@ -34,6 +34,7 @@ function CopyLink(n) {
 let year = document.getElementById("year");
 year.innerText = new Date().getFullYear();
 
+// Function to fetch env creds
 async function fetchEnv() {
   const url = "https://divanshu-soni-env.dragodiv.workers.dev/";
   const options = {
