@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="canonical" href="https://www.divanshusoni.in">
     <script>
@@ -23,6 +22,7 @@
             document.getElementById("loader").style.display = "none";
         })
     </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -293,14 +293,14 @@
                 <section class="contact">
                     <div class="con">
                         <span class="c-title">Contact Me!</span>
-                        <form id="contact" onsubmit="fetchEnv(); reset(); return false">
+                        <form id="contact">
                             <div class="inputs">
                                 <input type="text" placeholder="Name" id="name">
                                 <input type="email" placeholder="Email Id" id="email">
                                 <textarea name="message" id="message" cols="30" rows="3"
                                     placeholder="Write message here..."></textarea>
                             </div>
-                            <input type="submit" value="Send Message">
+                            <input type="button" value="Send Message" onclick="SendEmail(); return false;">
                         </form>
                     </div>
                     <div class="footer-links">
@@ -334,9 +334,61 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+let theme = document.getElementById("theme");
+theme.addEventListener("click", () => {
+  let toggle = document.getElementById("theme-toggle"),
+    themebtn = document.getElementById("theme-btn"),
+    themeData = document.getElementById("theme-data");
+  toggle.classList.toggle("dark");
+  themebtn.classList.toggle("fa-moon");
+  if (themebtn.classList.contains("fa-moon")) {
+    themeData.innerText = "Dark";
+  } else {
+    themeData.innerText = "Light";
+  }
+});
+let menuBtn = document.getElementById("menu-btn"),
+  icon = document.getElementById("menu"),
+  menuBar = document.getElementById("nav-links");
+menuBtn.addEventListener("click", () => {
+  icon.classList.toggle("fa-xmark");
+  menuBar.classList.toggle("active");
+});
+
+let links = [
+  { link: "/DivPlays-Music-Player-Glassmorph/" },
+  { link: "/card-ui-glassmorph/" },
+  { link: "/Image-Resize-and-Compressor/" },
+  { link: "/calculator-glassmorph/" },
+];
+
+function CopyLink(n) {
+  navigator.clipboard.writeText(window.location.origin + links[n - 1].link);
+  alert("Link Copied!!");
+}
+
+let year = document.getElementById("year");
+year.innerText = new Date().getFullYear();
+
+function SendEmail() {
+  Email.send({
+    SecureToken: "51467327-3a0f-43f9-8e3c-30241a311e1b",
+    To: "contact@divanshusoni.in",
+    From: "ad.creations.on@gmail.com",
+    FromName: document.getElementById("name").value,
+    ReplyAddress: document.getElementById("email").value,
+    Subject:
+      document.getElementById("name").value + " contacted you from portfolio",
+    Body:
+      document.getElementById("email").value +
+      "<br>" +
+      document.getElementById("message").value,
+  }).then((message) => alert(message));
+}
+    </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script src="index.js"></script>
-
 </body>
 </html>
